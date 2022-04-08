@@ -3,8 +3,14 @@
 @import 'templates/grid';
 @import 'templates/normalize';
 @import 'templates/interface';
+@import 'templates/fonts.scss';
+@import 'templates/hero.scss';
+
+*, *::before, *::after{
+   box-sizing: border-box;
+}
 
 body{
-   font-family: sans-serif;
+   font-family: 'Futura Book', sans-serif;
    font-size: 14px;
 }

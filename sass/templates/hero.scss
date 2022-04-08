@@ -1,0 +1,68 @@
+@import 'variables';
+
+.hero{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background: $dark url('../../img/hero-bg.jpg') no-repeat center;
+   background-size: cover;
+   height: 100vh;
+   padding-top: 100px;
+   color: #fff;
+   position: relative;
+   &__button{
+      margin-right: 20px;
+   }
+   &__content{
+      max-width: 670px;
+   }
+   &__text{
+      max-width: 504px;
+      font-size: 22px;
+   }
+   &__instagram{
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 80px;
+      height: 100%;
+   }
+   &__scroll-down{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      min-width: 247px;
+      min-height: 97px;
+      background: $dark;
+   }
+}
+
+.insagram{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: $dark;
+   &__link{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $primary;
+      transform: rotate(-270deg);
+   }
+}
+
+.title{
+   margin: 0;
+   font-family: 'Yeseva One', cursive;
+   font-weight: 400;
+   font-size: 40px;
+   text-transform: uppercase;
+   &--primary{
+      color: $primary;
+   }
+}

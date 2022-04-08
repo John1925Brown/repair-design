@@ -9,4 +9,10 @@
       color: #fff;
       background-color: $primary;
    }
+   &--outline{
+      border: 1px solid #FFFFFF;
+      background: transparent;
+      color: #fff;
+      padding: 12px 20px;
+   }
 }
