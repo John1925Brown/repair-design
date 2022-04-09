@@ -1,14 +1,14 @@
-@import 'variables';
-
 .button{
    font-weight: 400;
    font-family: 'Futura Demi';
-   padding: 13px 23px;
+   font-size: 0.93rem;
+   padding: 18px 25px;
    border: none;
    border-radius: 2px;
    text-transform: uppercase;
    cursor: pointer;
    &--primary{
+      padding: 12px 21,5px;
       color: #fff;
       background-color: $primary;
       transition: 0.3s;
@@ -20,6 +20,6 @@
       border: 1px solid #FFFFFF;
       background: transparent;
       color: #fff;
-      padding: 12px 33px;
+      padding: 17px 42px;
    }
 }

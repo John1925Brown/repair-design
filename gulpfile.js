@@ -18,8 +18,9 @@ function bs() {
     },
   });
   watch("./*.html").on("change", browserSync.reload);
-  watch("./sass/**/*.sass", serveSass);
-  watch("./scss/**/*.scss", serveSass);
+  watch("./sass/**/*.scss", serveSass).on("change", browserSync.reload);
+  watch("./sass/**/*.sass", serveSass).on("change", browserSync.reload);
+  watch("./scss/**/*.scss", serveSass).on("change", browserSync.reload);
   watch("./js/*.js").on("change", browserSync.reload);
 }
 
