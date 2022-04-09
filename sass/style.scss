@@ -5,12 +5,5 @@
 @import 'templates/interface';
 @import 'templates/fonts.scss';
 @import 'templates/hero.scss';
-
-*, *::before, *::after{
-   box-sizing: border-box;
-}
-
-body{
-   font-family: 'Futura Book', sans-serif;
-   font-size: 14px;
-}
+@import 'templates/settings.scss';
+@import 'templates/control.scss';
