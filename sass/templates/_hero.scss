@@ -1,5 +1,3 @@
-@import 'variables';
-
 .hero{
    display: flex;
    flex-direction: column;
@@ -21,14 +19,22 @@
    }
    &__button{
       margin-right: 20px;
+
    }
    &__content{
+      margin-left: 4.28rem;
       position: relative;
-      max-width: 670px;
+      max-width: 47.85rem;
+   }
+   &__title{
+   margin-bottom: 1rem;
    }
    &__text{
       max-width: 504px;
-      font-size: 22px;
+      font-size: 1.57rem;
+      line-height: 131%;
+      margin: 0;
+      margin-bottom: 3.35rem;
    }
    &__instagram{
       position: absolute;
@@ -50,12 +56,12 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      min-width: 247px;
-      min-height: 97px;
+      min-width: 17.64rem;
+      min-height: 6.72rem;
       background: $dark;
       &::after{
          content: '';
-         margin-left: 12px;
+         margin-left: 17px;
          width: 30px;
          height: 30px;
          border: 2px solid $primary;
@@ -71,6 +77,7 @@
    align-items: center;
    background: $dark;
    &__link{
+      font-size: 1.1rem;
       align-items: center;
       display: flex;
       text-decoration: none;
@@ -88,12 +95,16 @@
 }
 
 .title{
-   margin: 0;
+   line-height: 1.4;
    font-family: 'Yeseva One', cursive;
    font-weight: 400;
-   font-size: 40px;
+   font-size: 2.857rem;
    text-transform: uppercase;
    &--primary{
       color: $primary;
    }
+}
+
+.hero .button--outline{
+  padding: 17px 42px;
 }

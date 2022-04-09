@@ -1,9 +1,10 @@
-@import "templates/header";
 @import 'templates/variables';
+@import 'templates/interface';
+@import "templates/header";
+@import 'templates/hero.scss';
 @import 'templates/grid';
 @import 'templates/normalize';
-@import 'templates/interface';
 @import 'templates/fonts.scss';
-@import 'templates/hero.scss';
 @import 'templates/settings.scss';
 @import 'templates/control.scss';
+@import 'templates/media.scss';
