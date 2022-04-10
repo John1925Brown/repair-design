@@ -88,3 +88,13 @@
    }
    
  }
+
+//                 Media design
+
+@media(max-width: 890px){
+   .design{
+      &__card{
+         margin-bottom: 5rem;
+      }
+   }
+}
