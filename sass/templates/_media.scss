@@ -9,6 +9,8 @@
    }
 }
 
+//                 Media header
+
 @media (max-width: 992px){
    .nav{
       display: none;
@@ -22,6 +24,7 @@
       }
    }
 }
+//                 Media hero
 
 @media (max-width: 570px){
    .title{
@@ -65,3 +68,23 @@
       }
    }
 }
+
+//                 Media types
+
+@media(max-width: 890px){
+   .row{
+     flex-direction: column;
+     align-items: center;
+   }
+   .types{
+     &__card{
+       margin-bottom: 5rem;
+     }
+   }
+   .column .card{
+     &__text{
+       margin-left: 0;
+     }
+   }
+   
+ }

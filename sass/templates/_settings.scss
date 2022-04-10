@@ -12,6 +12,7 @@ body{
 }
 
 .section{
+   padding: 60px 0;
    &-title{
       text-align: center;
       text-transform: uppercase;
@@ -29,4 +30,8 @@ body{
          }
       }
    }
+}
+
+img{
+   max-width: 100%;
 }
