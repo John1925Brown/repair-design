@@ -1,5 +1,20 @@
 .container{
-   width: 85%;
-   max-width: 1256px;
-   margin: auto;
+  width: 85%;
+  max-width: 1256px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+ }
+ 
+ .column{
+  &-30{
+    flex-basis: 32%;
+ }
+ &-50{
+  flex-basis: 50%; 
+ }
 }
