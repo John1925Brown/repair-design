@@ -13,10 +13,35 @@ body{
 
 .section{
    padding: 60px 0;
+   &--dark{
+      background-color: $dark;
+      color: #fff;
+   }
    &-title{
       text-align: center;
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
+      &__text{
+         line-height: 2.07rem;
+         max-width: 35rem;
+      }
+      &__word{
+         display: flex;
+         align-items: center;
+         &::after{
+            content: '';
+            width: 90px;
+            height: 2px;
+            background: $primary;
+            margin-left: 2rem;
+         }
+      }
+      &--left{
+         text-align: left;
+      }
+      &__heading--primary{
+         color: $primary;
+      }
       &__image{
          display: flex;
          justify-content: center;
