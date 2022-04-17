@@ -55,6 +55,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   window.addEventListener('scroll', scrollArrowTop);
   btnToTop.addEventListener('click', arrowTop);
+
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
+  bullets.css('left', prev.width() + 10)
 });
 
 
