@@ -22,14 +22,15 @@
   &__nav{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 200px;
   }
   &__item{
     width: 9.07rem;
-    margin-right: 14.29rem;
+    margin-right: 12.29rem;
     margin-bottom: 3.57rem;
     &:nth-child(3n +3){
       max-width: 7.14rem;
-      margin-right: 0;
+      margin-right: -4rem;
     }
     &--number{
       font-family: 'Yeseva One', cursive;
@@ -97,4 +98,9 @@
     bottom: 0;
     right: 0;
   }
+}
+
+.steps{
+  padding-top: 30.57rem;
+  margin-top: -35.57rem;
 }
