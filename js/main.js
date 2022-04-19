@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   const swiper = new Swiper('.swiper', {
     loop: true,
-
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -70,6 +69,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
       prevEl: '.swiper-button-prev',
     }
   });
+
+  const swiper2 = new Swiper('.swiper2', {
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
@@ -77,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   next.css('left', prev.width() + 10 + bullets.width() + 10)
   bullets.css('left', prev.width() + 10)
 });
-
 
 
 

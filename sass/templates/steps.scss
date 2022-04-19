@@ -1,0 +1,100 @@
+.swiper-slide{
+  &__number{
+    font-size: 1.29rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+  }
+  &__info{
+    max-width: 24.07rem;
+    & p{
+      font-size: 1.07rem;
+      line-height: 1.82rem;
+      margin-bottom: 1.79rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  & img{
+    width: 54.64rem;
+    height: 26.86rem;
+  }
+  &__nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 9.07rem;
+    margin-right: 14.29rem;
+    margin-bottom: 3.57rem;
+    &:nth-child(3n +3){
+      max-width: 7.14rem;
+      margin-right: 0;
+    }
+    &--number{
+      font-family: 'Yeseva One', cursive;
+      font-weight: 400;
+      font-size: 1.07rem;
+      border-bottom: 1px solid $primary;
+      max-width: 16px;
+      padding-bottom: 3px;
+      margin-bottom: 0.83rem;
+    }
+  }
+}
+
+.column{
+  &--steps{
+    margin-right: 9.79rem;
+  }
+  &--steps .section-title__heading--primary{
+    font-weight: 400;
+    font-size: 1.93rem;
+    margin-bottom: 6.57rem;
+  }
+  &--steps .section-title{
+    &__word{
+      &::after{
+        content: '';
+        margin-left: 58px;
+      }
+    }
+  }
+}
+
+.section-title{
+  &__subtitle{
+    text-transform: uppercase;
+    font-size: 1.07rem;
+    margin-bottom: 1.93rem;
+  }
+}
+
+.steps .swiper{
+  &-slide{
+    &__text{
+      flex-basis: 100%;
+      max-width: 24.07rem;
+    }
+    &__heading{
+      max-width: 14.29rem;
+    }
+  }
+  &-button{
+    &-prev , &-next{
+      bottom: 6.86rem;
+    }
+  }
+  &-pagination{
+    bottom: 6.86rem;
+  }
+}
+
+.steps .row{
+  position: relative;
+  & .column-61{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
