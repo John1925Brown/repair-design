@@ -56,40 +56,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener('scroll', scrollArrowTop);
   btnToTop.addEventListener('click', arrowTop);
 
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  const sliders = document.querySelectorAll('.swiper');
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+  sliders.forEach((el) => {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      // If we need pagination
+      pagination: {
+        el: el.querySelector('.swiper-pagination'),
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: el.querySelector('.swiper-button-next'),
+        prevEl: el.querySelector('.swiper-button-prev'),
+      }
+
+    });
+
+    var next = $('.swiper-button-next');
+    var prev = $('.swiper-button-prev');
+    var bullets = $('.swiper-pagination');
+
+    next.css('left', prev.width() + 10 + bullets.width() + 10)
+    bullets.css('left', prev.width() + 10)
   });
 
-  const swiper2 = new Swiper('.swiper2', {
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
-
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
-
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
 });
 
 
