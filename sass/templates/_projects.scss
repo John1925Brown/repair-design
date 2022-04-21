@@ -28,6 +28,10 @@
     }
   }
   &-slide{
+    &--projects img{
+      width: 48.5rem;
+      height: 34.42rem;
+    }
     display: flex;
     flex-wrap: wrap;
     &__heading{
