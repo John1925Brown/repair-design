@@ -1,0 +1,87 @@
+.control{
+  &__button{
+    padding-right: 4.29rem;
+    padding-left: 4.29rem;
+  }
+  &__input-group{
+    display: flex;
+    flex-direction: column;
+    & ::placeholder{
+      color: #363636;
+      font-size: 1.29rem;
+    }
+  }
+  &__input{
+    border-bottom: 1px solid rgba($secondary, 0.5);
+    width: 16.5rem;
+  }
+  &__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 55rem;
+    margin: 0 auto;
+  }
+  &__policy{
+    flex-basis: 100%;
+    margin-top: 2.36rem;
+    &-label{
+      justify-content: center;
+    }
+  }
+  &__text{
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4.46rem;
+    margin-bottom: 4.29rem;
+    color: $dark;
+    line-height: 2.43rem;
+    font-size: 1.43rem;
+    max-width: 40.79rem;
+    &::before{
+      content: '';
+      display: block;
+      width: 3.93rem;
+      height: 2px;
+      background-color: $primary;
+      border-radius: 30px;
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__section-title{
+    margin-bottom: 2.214rem;
+    margin-top: -30rem;
+  }
+  &__video{
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    max-width: 58.36rem;
+    min-height: 31rem;
+    background: url('../../img/control-img.jpg') no-repeat center center;
+    &::before{
+      width: 100%;
+    position: absolute;
+      height: 100%;
+      content: '';
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.form{
+  &__label{
+    color: rgba(54, 54, 54, 0.5);
+  }
+}
+
+.video{
+  &__play{
+    position: relative;
+    margin: auto;
+  }
+}
