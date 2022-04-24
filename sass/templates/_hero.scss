@@ -55,6 +55,10 @@
       height: 100%;
    }
    &__scroll-down{
+      animation-name: slide-down;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
       font-family: 'Yeseva One', cursive;
       font-weight: 400;
       font-size: 12px;
@@ -80,6 +84,17 @@
          border-radius: 50%;
          background: url('../../img/svg/Arrow-down.svg') no-repeat center center;
       }
+   }
+}
+
+@keyframes slide-down{
+   from{
+      color: $primary;
+      bottom: 10px;
+   }
+   to{
+     color: #fff;
+      bottom: -10px;
    }
 }
 

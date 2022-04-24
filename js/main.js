@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
-  const area = document.querySelector('.area');
 
   const switchModal = () => {
     modal.classList.toggle('modal--visible');
@@ -82,6 +81,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
     bullets.css('left', prev.width() + 10)
   });
 
+  new WOW().init();
+
+  function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+        change.target.classList.add('control__video--active');
+      }
+    });
+  }
+
+  let options = {
+    threshold: [0.5]
+  };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.control__video');
+
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
 });
 
 
