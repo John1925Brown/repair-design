@@ -100,6 +100,39 @@ document.addEventListener("DOMContentLoaded", function (event) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+  //                 Валидация формы
+
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+  //                      Маска для телефона
+
+  $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7 (___) ___-__-__" });
 });
 
 
