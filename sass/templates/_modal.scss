@@ -17,7 +17,7 @@
   }
   &__dialog{
     max-width: 36.36rem;
-    background: $dark url('../../img/svg/bg-modal.svg') no-repeat center;
+    background: $dark url('../../img/svg/bg-modal.svg') no-repeat center / cover;
     padding: 2.36rem 3.5rem 1.92rem 3.5rem;
     color: #fff;
     position: relative;
@@ -49,7 +49,12 @@
     flex-direction: column;
   }
   &__input{
-    margin-bottom: 3.428rem;
+    &-group{
+      margin-bottom: 3.428rem;
+      display: flex;
+      flex-direction: column;
+    }
+
     &:last-of-type{
       margin-bottom: 1rem;
     }

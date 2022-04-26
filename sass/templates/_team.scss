@@ -1,0 +1,104 @@
+.team{
+  margin-top: -35rem;
+  padding-top: 5.71rem;
+  margin-bottom: 10rem;
+  &__heading{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 1.43rem;
+    line-height: 1.98rem;
+  }
+  &__section--subtitle{
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.43rem;
+    line-height: 1.98rem;
+    text-transform: none;
+    max-width: 32rem;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+  &__cards{
+    margin-bottom: 7.86rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__card{
+    position: relative;
+    max-width: 272px;
+    max-height: 357px;
+  }
+  &__info{
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 1.43rem;
+    width: 16.64rem;
+    margin-bottom: -3.65rem;
+    &--name{
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.29rem;
+      text-align: center;
+      margin-top: 1.6rem;
+      margin-bottom: 0.64rem;
+    }
+    &--post{
+      margin-top: 0;
+      color: $secondary;
+      font-size: 1.15rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    &--exp{
+      background: $primary;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0;
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-family: 'Yeseva One', cursive;
+      font-size: 0.9rem;
+    }
+  }
+  &__text{
+    color: #363636;
+    max-width: 40.6rem;
+    margin: 0 auto;
+    font-size: 1.43rem;
+    text-align: center;
+    line-height: 2.43rem;
+    margin-top: 1.06rem;
+    &::before{
+      content: '';
+      background-color: $primary;
+      width: 55px;
+      height: 2px;
+      border-radius: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.card{
+  &__image{
+    position: relative;
+    &--corner{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      background: $primary;
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -2.5rem;
+      margin-left: -2.5rem;
+      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    }
+  }
+}
+

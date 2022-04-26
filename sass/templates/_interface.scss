@@ -24,7 +24,7 @@
    }
 }
 
-.label{
+.label{ 
    &--light{
       color: rgba(255, 255, 255, 0.5);
       font-size: 1.07rem;
@@ -57,6 +57,7 @@
     }
   }
   &__label{
+    font-size: 1.142rem;
     display: flex;
     align-items: center;
     &::before{
@@ -66,6 +67,9 @@
       border: 1px solid $primary;
       border-radius: 1px;
       margin-right: 0.64rem;
+    }
+    &--center{
+      justify-content: center;
     }
   }
 }
@@ -93,5 +97,17 @@
   }
   &--on{
     display: block;
+  }
+}
+
+label{
+  &.invalid{
+    color: tomato;
+  }
+}
+
+input{
+  &.invalid{
+    border-bottom: 1px solid tomato;
   }
 }
