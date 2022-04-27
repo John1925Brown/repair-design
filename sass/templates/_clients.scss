@@ -1,0 +1,77 @@
+.clients{
+  margin-bottom: 20rem;
+  &__section-subtitle{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 25.71rem;
+    color: #363636; 
+    margin-bottom: 2.71rem;
+  }
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card{
+    &--footer{
+      background-color: $primary;
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+      align-items: center;
+      max-width: 20.93rem;
+      height: 3.86rem;
+      &--square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Yeseva One', cursive;
+        font-weight: 400;
+        font-size: 1.07rem;
+      }
+      &--square-info{
+        margin-left: 1rem;
+      }
+      &--term-info{
+        margin-left: 1rem;
+      }
+      &--term{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Yeseva One', cursive;
+        font-weight: 400;
+        font-size: 1.07rem;
+      }
+    }
+    &--text{
+      font-size: 1.07rem;
+      max-width: 23.14rem;
+      line-height: 1.9rem;
+      color: #959595;
+      margin-bottom: 2rem;
+    }
+    &--name{
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.29rem;
+      max-width: 18.71rem;
+      margin-left: 1.7rem;
+    }
+    &--title{
+      display: flex;
+      align-items: center;
+      justify-content:flex-end;
+      margin-bottom: 2rem;
+    }
+    flex-basis: 30%;
+    &--image img{
+      border-radius: 50%;
+    }
+  }
+}
+
+.clients .section-title{
+  &__heading{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+  }
+}
