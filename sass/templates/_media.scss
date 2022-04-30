@@ -258,3 +258,48 @@
 		background-color: $dark;
 	}
 }
+
+//               Media clients
+
+@media(max-width:976px){
+  .clients{
+		display: none;
+	}
+}
+
+//              Media footer
+@media(max-width:890px){
+	.footer{
+		background: $dark;
+		background-image: none;
+	}
+}
+
+@media(max-width:600px){
+	.footer{
+		&__wrap{
+			background: $dark;
+		}
+		&__input-group{
+			flex-basis: 100%;
+		}
+		&__button{
+			width: 100%;
+		}
+		&__map{
+			&--heading{
+				max-width: 22.29rem;
+			}
+			&--yandex-map{
+				max-height: 18.21rem;
+			}
+		}
+	}
+	.policy{
+		&__label{
+			&--center{
+				justify-content: flex-start;
+			}
+		}
+	}
+}
