@@ -127,6 +127,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax ok' + response);
+        }
+      });
     }
   });
 

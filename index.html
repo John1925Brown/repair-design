@@ -222,12 +222,12 @@
         </p>
         <form action="" class="form control__form">
           <div class="control__input-group">
-            <label for="user-name" maxlength="15" class="label form__label ">Имя</label>
-            <input placeholder="Как вас зовут:" type="text" class="input control__input" id="user-name">
+            <label for="control-user-name" maxlength="15" class="label form__label ">Имя</label>
+            <input placeholder="Как вас зовут:" type="text" class="input control__input" id="control-user-name">
           </div>
           <div class="control__input-group">
-            <label for="user-phone" class="label form__label ">Телефон</label>
-            <input placeholder="Ваш номер телефона:" type="tel" class="input control__input" id="user-phone">
+            <label for="control-user-phone" class="label form__label ">Телефон</label>
+            <input placeholder="Ваш номер телефона:" type="tel" class="input control__input" id="control-user-phone">
           </div>
           <button class="button button--primary control__button">
             Отправить
@@ -821,12 +821,12 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="user-name" maxlength="15" class="label form__label label--light">Имя</label>
-            <input placeholder="Как вас зовут:" type="text" class="input footer__input" id="user-name">
+            <label for="footer-user-name" maxlength="15" class="label form__label label--light">Имя</label>
+            <input placeholder="Как вас зовут:" type="text" class="input footer__input" id="footer-user-name">
           </div>
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input placeholder="Ваш номер телефона:" type="tel" class="input footer__input" id="user-phone">
+            <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
+            <input placeholder="Ваш номер телефона:" type="tel" class="input footer__input" id="footer-user-phone">
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="user-question" class="label form__label label--light">Вопрос</label>
@@ -879,20 +879,20 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
-      <form action="send.php" method="post" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
+          <label for="modal-user-name" class="label form__label label--light">Имя</label>
           <input placeholder="Как вас зовут:" maxlength="15" name="userName" type="text" class="input modal__input"
-            id="user-name">
+            id="modal-user-name">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
           <input placeholder="Ваш номер телефона:" name="userPhone" type="tel" class="input modal__input"
-            id="user-phone">
+            id="modal-user-phone">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light">Email</label>
-          <input placeholder="Ваш email" name="userEmail" type="email" class="input modal__input" id="user-email">
+          <label for="modal-user-email" class="label form__label label--light">Email</label>
+          <input placeholder="Ваш email" name="userEmail" type="email" class="input modal__input" id="modal-user-email">
         </div>
         <div class="policy modal__policy">
           <input type="checkbox" name="policy-checkbox" id="checkbox-modal" class="policy__checkbox">
