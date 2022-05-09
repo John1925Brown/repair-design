@@ -1,7 +1,3 @@
-/* document.addEventListener("DOMContentLoaded", function (event) {
-  console.log("DOM fully loaded and parsed");
-}); */
-
 document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -103,6 +99,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   //                 Валидация формы
 
+
+
   $('.modal__form').validate({
     errorClass: "invalid",
     errorElement: "div",
@@ -140,36 +138,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
+
   //                      Маска для телефона
 
   $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7 (___) ___-__-__" });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-$(document).ready(function () {
-  var modal = $('.modal'),
-    modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
-  modalBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
-  });
-  closeBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
-  });
-}); */
