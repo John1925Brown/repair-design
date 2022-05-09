@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -26,7 +26,7 @@
           <a href="#!" class="nav__item">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
-          <a href="tel:+7 (999) 768-32-99" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <a href="#!" class="phone contacts__phone">+7 (999) 768-32-99</a>
           <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
@@ -220,10 +220,11 @@
           зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших
           объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="" class="form control__form">
+        <form action="send.php" class="form control__form">
           <div class="control__input-group">
-            <label for="control-user-name" maxlength="15" class="label form__label ">Имя</label>
-            <input placeholder="Как вас зовут:" type="text" class="input control__input" id="control-user-name">
+            <label for="control-user-name" class="label form__label ">Имя</label>
+            <input placeholder="Как вас зовут:" maxlength="15" type="text" class="input control__input"
+              id="control-user-name">
           </div>
           <div class="control__input-group">
             <label for="control-user-phone" class="label form__label ">Телефон</label>
@@ -347,6 +348,7 @@
           <!-- /.column -->
         </div>
         <!-- /.row -->
+      </div>
     </section>
     <section class="section design">
       <div class="container">
@@ -469,6 +471,7 @@
           <!-- /.column -->
         </div>
         <!-- /.row -->
+      </div>
     </section>
     <section class="section section--dark steps">
       <div class="container">
@@ -819,10 +822,11 @@
     <div class="container">
       <div class="footer__wrap">
         <h3 class="footer__title">Остались вопросы?</h3>
-        <form action="" class="form footer__form">
+        <form action="send.php" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="footer-user-name" maxlength="15" class="label form__label label--light">Имя</label>
-            <input placeholder="Как вас зовут:" type="text" class="input footer__input" id="footer-user-name">
+            <label for="footer-user-name" class="label form__label label--light">Имя</label>
+            <input placeholder="Как вас зовут:" maxlength="15" type="text" class="input footer__input"
+              id="footer-user-name">
           </div>
           <div class="input-group footer__input-group">
             <label for="footer-user-phone" class="label form__label label--light">Телефон</label>
@@ -830,7 +834,7 @@
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="user-question" class="label form__label label--light">Вопрос</label>
-            <input placeholder="Я хочу спросить:" type="question" class="input footer__input" id="user-question">
+            <input placeholder="Я хочу спросить:" type="text" class="input footer__input" id="user-question">
           </div>
           <div class="policy footer__policy">
             <input type="checkbox" name="policy-checkbox" id="checkbox-policy" class="policy__checkbox">
@@ -850,7 +854,7 @@
           </h2>
         </div>
         <div class="footer__map--yandex-map">
-          <script type="text/javascript" charset="utf-8" async
+          <script async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8881ce2fce7ee51e5c7e7d9f873eacae3d695f18408fcad182260cca0abb4db0&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </div>
@@ -868,7 +872,7 @@
             <a href="#!" class="nav__item">Контакты</a>
           </nav>
           <div class="contacts menu__contacts">
-            <a href="tel:+7 (999) 768-32-99" class="phone contacts__phone">+7 (999) 768-32-99</a>
+            <a href="#!" class="phone contacts__phone">+7 (999) 768-32-99</a>
             <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
           </div>
         </div>
@@ -910,6 +914,7 @@
   <a class="arrow__top">Вверх ↑</a>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/jquery.vide.min.js"></script>
   <script src="js/wow.min.js"></script>
